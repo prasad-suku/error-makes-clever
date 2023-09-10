@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+       .container{
+        display: flex;
+        gap: 20px;
+        overflow: scroll;
+       }
+
+       .container::-webkit-scrollbar{
+        visibility: hidden;
+       }
+
+      
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+       <h1>one</h1>
+       <h1>two</h1>
+       <h1>three</h1>
+       <h1>four</h1>
+       <h1>five</h1>
+       <h1>six</h1>
+       <h1>seven</h1>
+       <h1>eight</h1>
+       <h1>nine</h1>
+       <h1>ten</h1>
+       <h1>one</h1>
+       <h1>two</h1>
+       <h1>three</h1>
+       <h1>four</h1>
+       <h1>five</h1>
+       <h1>six</h1>
+       <h1>seven</h1>
+       <h1>eight</h1>
+       <h1>nine</h1>
+       <h1>ten</h1>
+
+    </div>
+    <br>
+    <button id="left">left</button>
+    <button id="right">right</button>
+</body>
+
+<script>//selecting button and container
+
+var leftbtn =document.getElementById("left")
+var rightbtn =document.getElementById("right")
+
+//selecting container
+  var containeritem =document.querySelector(".container")
+
+  leftbtn.addEventListener("click",function(){
+        
+    containeritem.scrollBy(
+        {
+
+        top:0,
+        left:200,
+        behavior:"smooth"
+    })
+
+  })
+
+  //add eventlistnerner for right btn
+
+  rightbtn.addEventListener("click",function(){
+        
+        containeritem.scrollBy(
+            {
+    
+            top:0,
+            left:-200,
+            behavior:"smooth"
+        })
+    
+      })
+</script>
+</html>

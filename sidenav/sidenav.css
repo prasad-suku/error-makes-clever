@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.navbar{
+    color: #1D232C;
+    border-bottom: solid #1D232C 2px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidenav{
+    background-color: #1D232C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    transition: 2s;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+i{
+    cursor: pointer;
+}

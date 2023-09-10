@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress bar</title>
+
+    <style>
+        body{
+            background: rgb(79, 136, 136);
+        }
+        .outerbox{
+              height: 30px;
+              border: 2px solid black;
+              border-radius: 7px;
+
+
+        }
+        .innerbox{
+                 background-color: aqua;   
+                 height: inherit;
+                 background-color: aquamarine;
+                 width: 80%;
+                 transition: 2s;
+                 text-align: center;
+
+        }
+       
+
+    </style>
+</head>
+<body>
+    
+<div class="outerbox">
+<div class="innerbox">
+    50%
+</div>
+</div>
+<br><br>
+<input type="text" id="inp1" placeholder="ENTER THE PERCENTENTAGE"><br><br>
+<button id="btn">LOAD</button>
+
+<script>
+ 
+ //selecting values 
+var input1 =document.getElementById("inp1")
+var btn =document.getElementById("btn")
+var innerboxval =document.querySelector(".innerbox")
+
+btn.addEventListener("click", function(){
+        if(input1.value<=100)
+        {
+     innerboxval.style.width=input1.value+"%"
+     innerboxval.textContent=input1.value +"%"
+    }
+})
+
+</script>
+</body>
+</html>

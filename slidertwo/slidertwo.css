@@ -1,0 +1,64 @@
+
+/* Brands*/
+.brands{
+    position: relative;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.brands-container{
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    align-items: center;
+    padding: 10px;
+   
+
+   
+}
+.brands-container::-webkit-scrollbar{
+   
+    width: 0;
+    appearance: none;
+
+  
+}
+
+.brands-right-button{
+    position: absolute;
+    font-size: 3vw;
+    right: 0px;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    border-radius: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.brands-left-button{
+    position: absolute;
+    font-size: 3vw;
+    left: 0px;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    border-radius: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.brands-box{
+    text-align: center;
+}
+
+.brands-box img{
+   width: 40px;
+}

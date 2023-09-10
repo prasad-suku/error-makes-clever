@@ -1,0 +1,25 @@
+
+.one{
+    background-color: aqua;
+    height: 100px;
+    width: 100vw;
+}
+.two{
+    background-color: greenyellow;
+    height: 100px;
+    width: 100vw;
+}
+.three{
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100vw;
+}
+.slider-container{
+    display: flex;
+    transition: 2s;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
